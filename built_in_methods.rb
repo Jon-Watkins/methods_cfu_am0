@@ -7,20 +7,24 @@
 # No arguments are passed; downcase has one clear job which is to lowercase all letters that exist in the String
 # The return value is "hello world"
 "Hello World".downcase
-
-
+# The include question mark Method is being called on the "Hello World" String Object, with the Argument "Hello".
+# The include question mark Method runs a comparison of the Argument to the String Object to check if the Argument appears anywhere in the String
+# and, should it pass, will return a Boolean response, in this case 'true'.
 "Hello World".include?("Hello")
-
-
+# The end underscore with question mark Method is being called on the "Hello World" String Object, with the Argument "Hello".
+# The end underscore with question mark Method runs a comparison of the Argument to the String Object to determine if the String ends with the Argument 
+# and, should it pass, will return a Boolean response, in this case 'false'.
 "Hello World".end_with?("Hello")
-
-
+# The end underscore with question mark Method is being called on the "Hello World" String Object, with the Argument "rld".
+# The end underscore with question mark Method runs a comparison of the Argument to the String Object to determine if the String ends with the Argument 
+# and, should it pass, will return a Boolean response, in this case 'true'.
 "Hello World".end_with?("rld")
-
-
+# The even question mark Method is being called on the 12 Integer Object, and no arguments are present or necessary.
+# The even question mark Method checks the Integer to determine if it is an even value and will return a Boolean value. 
+# In this instance, the return value will be 'true', because the Integer 12 is an even value.
 12.even?
-
-
+# The next Method is being called on the 18 Integer Object, and no arguments are present or needed.
+# The next Method will return the Integer incremented to the next whole value, in this case the number 19.
 18.next
 
 
