@@ -6,15 +6,41 @@
 
 # 1: Write a method named greeting that returns a string with a general greeting. 
 
-# What is the return value of your method?
+# def greeting
+#     "Hello there!"
+# end
+
+# up = greeting.upcase
+# down = greeting.downcase
+
+# p greeting
+# p up
+# p down
+
+# What is the return value of your method? 
+# "Hello there!", a String Object.
+
 # How many arguments did you pass your method?
+# None.
 
 
 # 2: Write a method named custom_greeting that returns a greeting WITH a specific name.
 
+def custom_greeting(name)
+    "Hello there, #{name}!"
+end
+
+p custom_greeting("General Kenobi")
+p custom_greeting("Count Dooku")
+
 # What is the return value of your method?
+# "Hello there, #{name}!", a String Object with a string interpolation to insert the argumented value.
+
 # How many arguments did you pass your method?
+# Two, the Strings "General Kenobi" and "Count Dooku".
+
 # What data type was your argument(s)?
+# Strings.
 
 
 # 3: Write a method named greet_person that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
@@ -35,14 +61,14 @@
 # 5: Write a method named check_stock that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
 
-check_stock(4, "Coffee");
-# => "Coffee is stocked"
+# check_stock(4, "Coffee");
+# # => "Coffee is stocked"
 
-check_stock(3, "Tortillas");
-# => "Tortillas - running LOW"
+# check_stock(3, "Tortillas");
+# # => "Tortillas - running LOW"
 
-check_stock(0, "Cheese");
-# => "Cheese - OUT of stock!"
+# check_stock(0, "Cheese");
+# # => "Cheese - OUT of stock!"
 
-check_stock(1, "Salsa");
-# => "Salsa - running LOW"
+# check_stock(1, "Salsa");
+# # => "Salsa - running LOW"
