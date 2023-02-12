@@ -65,15 +65,15 @@
 # 4: Write a method named square that takes in one integer, and returns the square of that integer.
 # Bonus: Print a sentence that interpolates the return value of your square method.
 
-def square(number)
-    number ** 2
-end
+# def square(number)
+#     number ** 2
+# end
 
-result = square(3)
+# result = square(3)
 
-p square(3)
-p square(15)
-p "#{result} is the square of 3"
+# p square(3)
+# p square(15)
+# p "#{result} is the square of 3"
 
 # What is the return value of your method?
 # The integer which is a result of multiplying the argumented value by itself.
@@ -88,14 +88,24 @@ p "#{result} is the square of 3"
 # 5: Write a method named check_stock that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
 
-# check_stock(4, "Coffee");
-# # => "Coffee is stocked"
+def check_stock(num, item)
+    if num >= 4
+        p "#{item} is stocked"
+    elsif num >= 1
+        p "#{item} - running LOW"
+    else
+        p "#{item} - OUT of stock!"
+    end
+end
 
-# check_stock(3, "Tortillas");
-# # => "Tortillas - running LOW"
+check_stock(4, "Coffee");
+# => "Coffee is stocked"
 
-# check_stock(0, "Cheese");
-# # => "Cheese - OUT of stock!"
+check_stock(3, "Tortillas");
+# => "Tortillas - running LOW"
 
-# check_stock(1, "Salsa");
-# # => "Salsa - running LOW"
+check_stock(0, "Cheese");
+# => "Cheese - OUT of stock!"
+
+check_stock(1, "Salsa");
+# => "Salsa - running LOW"
