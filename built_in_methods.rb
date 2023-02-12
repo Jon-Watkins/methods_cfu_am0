@@ -43,6 +43,15 @@
 first_name = "Jeff"
 puts first_name.start_with?("J")
 
+dog_name = "Ginger"
+dog_breed = "Chihuahua"
+
+# The swapcase Method is being called on the dog_name Variable, which is assigned to the String Object "Ginger"
+# There are no arguments needed, and the swapcase method will return the String with each letter's capitalization flipped
+p dog_name.swapcase
+# The reverse Method is being called on the dog_breed Variable, which is assigned to the String Object "Chihuahua"
+# There are no arguments needed, and the reverse method will return a String with the letters of the original assigned string in reverse order
+p dog_breed.reverse
 
 
 # SECTION 3: Calling methods on variables assigned to integers.
