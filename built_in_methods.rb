@@ -46,11 +46,11 @@ puts first_name.start_with?("J")
 dog_name = "Ginger"
 dog_breed = "Chihuahua"
 
-# The swapcase Method is being called on the dog_name Variable, which is assigned to the String Object "Ginger"
-# There are no arguments needed, and the swapcase method will return the String with each letter's capitalization flipped
+# The swapcase Method is being called on the dog_name Variable, which is assigned to the String Object "Ginger".
+# There are no arguments needed, and the swapcase Method will return the String with each letter's capitalization flipped.
 p dog_name.swapcase
-# The reverse Method is being called on the dog_breed Variable, which is assigned to the String Object "Chihuahua"
-# There are no arguments needed, and the reverse method will return a String with the letters of the original assigned string in reverse order
+# The reverse Method is being called on the dog_breed Variable, which is assigned to the String Object "Chihuahua".
+# There are no arguments needed, and the reverse Method will return a String with the letters of the original assigned String in reverse order.
 p dog_breed.reverse
 
 
@@ -60,10 +60,30 @@ p dog_breed.reverse
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+dog_age = 13
+self_age = 37
 
+# The odd? Method is being called on the dog_age Variable, which is assigned to the Integer '13'.
+# The odd? Method will return a Boolean value, and in this case will print 'true', because the called Integer is odd.
+p dog_age.odd?
+# The round() Method is being called on the self_age Variable, which is assigned to the Integer '37'.
+# The argument is (-1), and refers to the digit in the tens position.
+# The round(-1) Method will return an Integer value which is the called Integer rounded to the nearest 10, in this case '40'.
+p self_age.round(-1)
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+ages = [13, 37, 27, 37]
+roommates = ["Ryan", "Zoe", "Cat", "Jon"]
+
+# The drop() Method is beind called on the ages Array, which contains the Integer elements '13', '37', '27', and '37'.
+# The argument is (1), and assigns the first (1) element in the called array as valid for the Method.
+# The drop(1) will return an Array which contains all but the first (1) element(s) of the called Array.
+p ages.drop(1)
+# The count Method is being called on the roommates Array, which contains the String elements "Ryan", "Zoe", "Cat", and "Jon".
+# The count Method tracks the total number of elements in the Array, without regard for type, and will return that number, in this case '4'.
+p roommates.count
